@@ -314,6 +314,7 @@ require('lazy').setup({
 
       -- Document existing key chains
       spec = {
+        {'<leader>q', 'ZZ<cr>', desc = 'Save and quit' },
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
         { '<leader>r', group = '[R]ename' },
@@ -951,7 +952,6 @@ require('lazy').setup({
     },
   },
 })
-vim.keymap.set('n', '<leader>q', 'ZZ<cr>', { desc = 'Save and quit' })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
